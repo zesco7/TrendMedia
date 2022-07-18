@@ -8,7 +8,10 @@
 import UIKit
 
 class SettingViewController: UITableViewController {
-
+    
+    @IBOutlet weak var titleOfView: UILabel!
+    
+    
     var header : [String] = ["전체 설정", "개인 설정", "기타"]
     var section1 : [String] = ["공지사항", "실험실", "버전 정보"]
     var section2 : [String] = ["개인/보안", "알림", "채팅", "멀티프로필"]
@@ -17,6 +20,10 @@ class SettingViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        titleOfView.text = "설정"
+        titleOfView.textAlignment = .center
+        titleOfView.font = .systemFont(ofSize: 20)
 
     }
     
