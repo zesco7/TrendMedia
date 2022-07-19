@@ -59,23 +59,20 @@ class SettingTableViewController: UITableViewController {
     //ex. 카톡이름, 프사, 상태메시지 등
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        //100개
-        let cell = tableView.dequeueReusableCell(withIdentifier: "settingCell")!
+        print("cellforroawat", indexPath)
         
-        if indexPath.section == 0 {
-            cell.textLabel?.text = birthdayFriends[indexPath.row]
-            cell.textLabel?.textColor = .systemPink
-            cell.textLabel?.font = .boldSystemFont(ofSize: 20)
-        } else if indexPath.section == 1 {
-            cell.textLabel?.text = "1번 인덱스 텍스트"
-            cell.textLabel?.textColor = .systemMint
-            cell.textLabel?.font = .italicSystemFont(ofSize: 10)
-        } else if indexPath.section == 2 {
-            cell.textLabel?.text = "1번 인덱스 텍스트"
-            cell.textLabel?.textColor = .systemBlue
-            cell.textLabel?.font = .boldSystemFont(ofSize: 3)
-        }
-        
-        return cell
-    }
+        let cell = tableView.dequeueReusableCell(withIdentifier: "rightDetailCell")!
+                   cell.textLabel?.text = "1번 인덱스 텍스트"
+                   cell.textLabel?.textColor = .systemBlue
+                   cell.textLabel?.font = .boldSystemFont(ofSize: 3)
+                   cell.detailTextLabel?.text = "디테일 레이블"
+                   cell.imageView?.image = UIImage(systemName: "star.fill")
+                   return cell
+            } 
+
+    //셀의 높이(옵션이지만 빈도 높음) (feat.tableView.rowHeight)
+        override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+            
+            return 50
+}
 }
