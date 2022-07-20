@@ -16,9 +16,11 @@ class SecondShoppingTableViewCell: UITableViewCell {
     @IBOutlet weak var viewForCell: UIView!
     
     
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        viewForCell.backgroundColor = .systemGray6
+        viewForCell.layer.cornerRadius = 10
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

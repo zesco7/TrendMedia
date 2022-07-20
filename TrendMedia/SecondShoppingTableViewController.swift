@@ -26,12 +26,13 @@ class SecondShoppingTableViewController: UITableViewController {
         
         secondTextField.placeholder = "무엇을 구매하실 건가요?"
         secondTextField.backgroundColor = .systemGray6
+        secondTextField.borderStyle = .none
         
         secondButtonToAdd.backgroundColor = .systemGray5
         secondButtonToAdd.layer.cornerRadius = 10
         secondButtonToAdd.setTitle("추가", for: .normal)
         secondButtonToAdd.tintColor = .black
-
+        
     }
 
     
