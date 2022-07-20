@@ -13,6 +13,9 @@ class SecondShoppingTableViewCell: UITableViewCell {
     @IBOutlet weak var secondShoppingList: UILabel!
     @IBOutlet weak var secondStarButton: UIButton!
     
+    @IBOutlet weak var viewForCell: UIView!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

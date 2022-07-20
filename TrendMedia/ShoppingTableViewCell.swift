@@ -10,7 +10,6 @@ import UIKit
 class ShoppingTableViewCell: UITableViewCell {
 
     @IBOutlet weak var checkBoxButton: UIButton!
-    
     @IBOutlet weak var shoppingListAdded: UILabel!
     @IBOutlet weak var starButton: UIButton!
     

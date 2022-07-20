@@ -126,10 +126,10 @@
             </objects>
             <point key="canvasLocation" x="-157.97101449275362" y="4.6875"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Second Shopping Table View Controller-->
         <scene sceneID="cxi-dV-jTn">
             <objects>
-                <tableViewController id="oGQ-AA-HnC" sceneMemberID="viewController">
+                <tableViewController id="oGQ-AA-HnC" customClass="SecondShoppingTableViewController" customModule="TrendMedia" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="beT-ca-RVL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -154,7 +154,7 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                             <connections>
-                                                <action selector="secondTextField:" destination="DAM-qp-gAJ" eventType="editingDidEndOnExit" id="cYI-Wc-Itq"/>
+                                                <action selector="secondTextField:" destination="oGQ-AA-HnC" eventType="editingDidEndOnExit" id="2KC-9a-Mpr"/>
                                             </connections>
                                         </textField>
                                     </subviews>
@@ -181,7 +181,7 @@
                                                         <constraint firstAttribute="width" constant="50" id="qzx-30-hdc"/>
                                                     </constraints>
                                                     <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" image="star.fill" catalog="system"/>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W5j-Jh-JXY">
                                                     <rect key="frame" x="70" y="10" width="234" height="63"/>
@@ -189,8 +189,8 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0YZ-er-387">
-                                                    <rect key="frame" x="10" y="10" width="50" height="63"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark.square" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="0YZ-er-387">
+                                                    <rect key="frame" x="10" y="11" width="50" height="60.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="50" id="CaY-5o-jWD"/>
                                                         <constraint firstAttribute="width" constant="50" id="PkF-o4-h7J"/>
@@ -223,6 +223,7 @@
                                     <outlet property="secondCheckbox" destination="0YZ-er-387" id="PXC-jZ-ME8"/>
                                     <outlet property="secondShoppingList" destination="W5j-Jh-JXY" id="TMD-Su-fgQ"/>
                                     <outlet property="secondStarButton" destination="PFi-24-2By" id="eVS-wx-nzB"/>
+                                    <outlet property="viewForCell" destination="XlE-qq-DaE" id="Cgo-BF-D9M"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -231,14 +232,20 @@
                             <outlet property="delegate" destination="oGQ-AA-HnC" id="SXg-34-Uiw"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="secondButtonToAdd" destination="6ub-Yo-olI" id="Bhg-f7-n3z"/>
+                        <outlet property="secondFieldToWrite" destination="Vr6-nD-iTO" id="uXN-4M-OkJ"/>
+                        <outlet property="secondTextField" destination="mrD-SN-WUC" id="i11-mC-zvU"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="45u-NK-k91" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="DAM-qp-gAJ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="714.49275362318849" y="4.6875"/>
         </scene>
     </scenes>
     <resources>
+        <image name="checkmark.square" catalog="system" width="128" height="114"/>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
