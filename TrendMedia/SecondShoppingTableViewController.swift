@@ -74,13 +74,14 @@ class SecondShoppingTableViewController: UITableViewController {
 /*
  연습 피드백
  #업데이트 완료
- -. 셀내용 불러오기(dequeue)
- -. 텍스트필드 액션 추가(append, reloadData)
- -. 스와이프 삭제 액션 추가(EditingStyle)
+ -. 셀내용 불러오기 : dequeue
+ -. 텍스트필드 액션 추가 : append, reloadData
+ -. 스와이프 삭제 액션 추가 : EditingStyle
+ -. 상단 텍스트필드 테두리 삭제 : borderstyle
+ -. 하단 셀 배경 회색으로 변경 및 테두리 둥글게 적용 : tableviewcell파일에서 속성변경(tableviewcontroller 아님)
  
  #업데이트 예정
- -. 상단 텍스트필드 테두리 삭제
- -. 하단 셀 배경 회색으로 변경 및 테두리 둥글게 적용
+-. 추가 버튼 클릭시 텍스트필드값 하단셀에 추가
  
  #피드백
  1. 테이블 클래스 연결
