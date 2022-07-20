@@ -33,6 +33,8 @@
 		98B2DEEA2886478C0093F3C1 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B2DEE92886478C0093F3C1 /* UITextField+Extension.swift */; };
 		98B2DEEC28864BA70093F3C1 /* BucketListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B2DEEB28864BA70093F3C1 /* BucketListTableViewController.swift */; };
 		98B2DEEE28864D960093F3C1 /* BucketListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B2DEED28864D960093F3C1 /* BucketListTableViewCell.swift */; };
+		98D7399F28880F02006E59E0 /* SecondShoppingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D7399E28880F02006E59E0 /* SecondShoppingTableViewController.swift */; };
+		98D739A128881304006E59E0 /* SecondShoppingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D739A028881304006E59E0 /* SecondShoppingTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +64,8 @@
 		98B2DEE92886478C0093F3C1 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 		98B2DEEB28864BA70093F3C1 /* BucketListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListTableViewController.swift; sourceTree = "<group>"; };
 		98B2DEED28864D960093F3C1 /* BucketListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListTableViewCell.swift; sourceTree = "<group>"; };
+		98D7399E28880F02006E59E0 /* SecondShoppingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondShoppingTableViewController.swift; sourceTree = "<group>"; };
+		98D739A028881304006E59E0 /* SecondShoppingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondShoppingTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,8 @@
 				98913B5F28879DFE00038365 /* RecommendCollectionViewCell.swift */,
 				98913B5D28879AAA00038365 /* RecommendCollectionViewController.swift */,
 				98913B552886F7F000038365 /* Shopping.storyboard */,
+				98D739A028881304006E59E0 /* SecondShoppingTableViewCell.swift */,
+				98D7399E28880F02006E59E0 /* SecondShoppingTableViewController.swift */,
 				98913B59288702E400038365 /* ShoppingTableViewCell.swift */,
 				98913B572886F87A00038365 /* ShoppingTableViewController.swift */,
 				98913B512886D04400038365 /* TrenViewController.swift */,
@@ -214,6 +220,7 @@
 				98913B5E28879AAA00038365 /* RecommendCollectionViewController.swift in Sources */,
 				98913B5A288702E400038365 /* ShoppingTableViewCell.swift in Sources */,
 				98913B582886F87A00038365 /* ShoppingTableViewController.swift in Sources */,
+				98D739A128881304006E59E0 /* SecondShoppingTableViewCell.swift in Sources */,
 				98913B522886D04400038365 /* TrenViewController.swift in Sources */,
 				98B2DEEE28864D960093F3C1 /* BucketListTableViewCell.swift in Sources */,
 				98B2DEEC28864BA70093F3C1 /* BucketListTableViewController.swift in Sources */,
@@ -223,6 +230,7 @@
 				9885A2C22884FE41009B5CCF /* SettingTableViewController.swift in Sources */,
 				98913B6028879DFE00038365 /* RecommendCollectionViewCell.swift in Sources */,
 				9885A2B02884DDEA009B5CCF /* ViewController.swift in Sources */,
+				98D7399F28880F02006E59E0 /* SecondShoppingTableViewController.swift in Sources */,
 				9885A2AC2884DDEA009B5CCF /* AppDelegate.swift in Sources */,
 				9885A2AE2884DDEA009B5CCF /* SceneDelegate.swift in Sources */,
 			);
