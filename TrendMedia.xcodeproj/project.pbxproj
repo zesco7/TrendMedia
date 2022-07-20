@@ -37,6 +37,7 @@
 		98D739A128881304006E59E0 /* SecondShoppingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D739A028881304006E59E0 /* SecondShoppingTableViewCell.swift */; };
 		98D739A328882C92006E59E0 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D739A228882C92006E59E0 /* MovieTableViewCell.swift */; };
 		98D739A528882D6E006E59E0 /* MovieTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D739A428882D6E006E59E0 /* MovieTableViewController.swift */; };
+		98D739A7288841E1006E59E0 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D739A6288841E1006E59E0 /* Movie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		98D739A028881304006E59E0 /* SecondShoppingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondShoppingTableViewCell.swift; sourceTree = "<group>"; };
 		98D739A228882C92006E59E0 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		98D739A428882D6E006E59E0 /* MovieTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewController.swift; sourceTree = "<group>"; };
+		98D739A6288841E1006E59E0 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 		9885A2AA2884DDEA009B5CCF /* TrendMedia */ = {
 			isa = PBXGroup;
 			children = (
+				98D739A6288841E1006E59E0 /* Movie.swift */,
 				98888D0E2885846F00DA44C3 /* Setting.storyboard */,
 				9885A2B12884DDEA009B5CCF /* Main.storyboard */,
 				9885A2BF2884F113009B5CCF /* Home.storyboard */,
@@ -236,6 +239,7 @@
 				98888D1328858E7800DA44C3 /* SettingViewController.swift in Sources */,
 				98B2DEE62886442E0093F3C1 /* SearchViewController.swift in Sources */,
 				9885A2C22884FE41009B5CCF /* SettingTableViewController.swift in Sources */,
+				98D739A7288841E1006E59E0 /* Movie.swift in Sources */,
 				98913B6028879DFE00038365 /* RecommendCollectionViewCell.swift in Sources */,
 				9885A2B02884DDEA009B5CCF /* ViewController.swift in Sources */,
 				98D7399F28880F02006E59E0 /* SecondShoppingTableViewController.swift in Sources */,

@@ -41,15 +41,15 @@ class SecondShoppingTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return secondShoppingListStored.count
     }
-    
+
     //MARK: - 셀 내용 설정
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
+
         let cell = tableView.dequeueReusableCell(withIdentifier: "SecondShoppingTableViewCell", for: indexPath) as! SecondShoppingTableViewCell
-        
+
         cell.secondShoppingList.text = secondShoppingListStored[indexPath.row]
         cell.secondShoppingList.font = .boldSystemFont(ofSize: 15)
-        
+
         return cell
     }
     //MARK: - 액션
@@ -58,16 +58,16 @@ class SecondShoppingTableViewController: UITableViewController {
         secondShoppingListStored.append(sender.text!)
         tableView.reloadData()
     }
-    
+
     //2. 스와이프 삭제 액션 추가
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             secondShoppingListStored.remove(at: indexPath.row)
             tableView.reloadData()
     }
-    
+
     }
-    
+
 }
 
 
@@ -90,3 +90,4 @@ class SecondShoppingTableViewController: UITableViewController {
  
  테이블클래스 연결 분명히 한것 같은데 안되어있어서 시간 많이 잡아먹었다. 테이블뷰 만들 때 자주 실수하는 세가지는 꼭 주의해서 코딩하자!
  */
+
