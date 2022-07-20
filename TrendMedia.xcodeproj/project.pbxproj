@@ -22,6 +22,10 @@
 		98913B562886F7F000038365 /* Shopping.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98913B552886F7F000038365 /* Shopping.storyboard */; };
 		98913B582886F87A00038365 /* ShoppingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98913B572886F87A00038365 /* ShoppingTableViewController.swift */; };
 		98913B5A288702E400038365 /* ShoppingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98913B59288702E400038365 /* ShoppingTableViewCell.swift */; };
+		98913B5E28879AAA00038365 /* RecommendCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98913B5D28879AAA00038365 /* RecommendCollectionViewController.swift */; };
+		98913B6028879DFE00038365 /* RecommendCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98913B5F28879DFE00038365 /* RecommendCollectionViewCell.swift */; };
+		98913B632887AEBD00038365 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 98913B622887AEBD00038365 /* Kingfisher */; };
+		98913B662887AEFB00038365 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 98913B652887AEFB00038365 /* Toast */; };
 		98B2DEDE288640130093F3C1 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98B2DEDD288640130093F3C1 /* Search.storyboard */; };
 		98B2DEE2288640770093F3C1 /* Intro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98B2DEE1288640770093F3C1 /* Intro.storyboard */; };
 		98B2DEE62886442E0093F3C1 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B2DEE52886442E0093F3C1 /* SearchViewController.swift */; };
@@ -49,6 +53,8 @@
 		98913B552886F7F000038365 /* Shopping.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Shopping.storyboard; sourceTree = "<group>"; };
 		98913B572886F87A00038365 /* ShoppingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingTableViewController.swift; sourceTree = "<group>"; };
 		98913B59288702E400038365 /* ShoppingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingTableViewCell.swift; sourceTree = "<group>"; };
+		98913B5D28879AAA00038365 /* RecommendCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendCollectionViewController.swift; sourceTree = "<group>"; };
+		98913B5F28879DFE00038365 /* RecommendCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendCollectionViewCell.swift; sourceTree = "<group>"; };
 		98B2DEDD288640130093F3C1 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		98B2DEE1288640770093F3C1 /* Intro.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Intro.storyboard; sourceTree = "<group>"; };
 		98B2DEE52886442E0093F3C1 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98913B662887AEFB00038365 /* Toast in Frameworks */,
+				98913B632887AEBD00038365 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +102,8 @@
 				98B2DEDD288640130093F3C1 /* Search.storyboard */,
 				98B2DEE1288640770093F3C1 /* Intro.storyboard */,
 				98913B532886D0A300038365 /* Trend.storyboard */,
+				98913B5F28879DFE00038365 /* RecommendCollectionViewCell.swift */,
+				98913B5D28879AAA00038365 /* RecommendCollectionViewController.swift */,
 				98913B552886F7F000038365 /* Shopping.storyboard */,
 				98913B59288702E400038365 /* ShoppingTableViewCell.swift */,
 				98913B572886F87A00038365 /* ShoppingTableViewController.swift */,
@@ -131,6 +141,10 @@
 			dependencies = (
 			);
 			name = TrendMedia;
+			packageProductDependencies = (
+				98913B622887AEBD00038365 /* Kingfisher */,
+				98913B652887AEFB00038365 /* Toast */,
+			);
 			productName = TrendMedia;
 			productReference = 9885A2A82884DDEA009B5CCF /* TrendMedia.app */;
 			productType = "com.apple.product-type.application";
@@ -159,6 +173,10 @@
 				Base,
 			);
 			mainGroup = 9885A29F2884DDEA009B5CCF;
+			packageReferences = (
+				98913B612887AEBD00038365 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				98913B642887AEFB00038365 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
+			);
 			productRefGroup = 9885A2A92884DDEA009B5CCF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -193,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				98B2DEEA2886478C0093F3C1 /* UITextField+Extension.swift in Sources */,
+				98913B5E28879AAA00038365 /* RecommendCollectionViewController.swift in Sources */,
 				98913B5A288702E400038365 /* ShoppingTableViewCell.swift in Sources */,
 				98913B582886F87A00038365 /* ShoppingTableViewController.swift in Sources */,
 				98913B522886D04400038365 /* TrenViewController.swift in Sources */,
@@ -202,6 +221,7 @@
 				98888D1328858E7800DA44C3 /* SettingViewController.swift in Sources */,
 				98B2DEE62886442E0093F3C1 /* SearchViewController.swift in Sources */,
 				9885A2C22884FE41009B5CCF /* SettingTableViewController.swift in Sources */,
+				98913B6028879DFE00038365 /* RecommendCollectionViewCell.swift in Sources */,
 				9885A2B02884DDEA009B5CCF /* ViewController.swift in Sources */,
 				9885A2AC2884DDEA009B5CCF /* AppDelegate.swift in Sources */,
 				9885A2AE2884DDEA009B5CCF /* SceneDelegate.swift in Sources */,
@@ -420,6 +440,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		98913B612887AEBD00038365 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		98913B642887AEFB00038365 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		98913B622887AEBD00038365 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 98913B612887AEBD00038365 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		98913B652887AEFB00038365 /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 98913B642887AEFB00038365 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9885A2A02884DDEA009B5CCF /* Project object */;
 }

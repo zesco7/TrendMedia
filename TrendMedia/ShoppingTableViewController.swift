@@ -72,6 +72,14 @@ class ShoppingTableViewController: UITableViewController {
 }
 
 /*
+ 구현 리뷰
+ 1. 툴바 상단에 uiview 추가
+ 2. uiview안에 uiview 또 추가
+ 3.
+ */
+
+
+/*
  초안 피드백
  #업데이트 완료
  -. 텍스트필드 입력시 셀 추가 기능
