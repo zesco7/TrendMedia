@@ -43,3 +43,22 @@ class MovieTableViewController: UITableViewController {
     
     }
 }
+
+/*
+ 연습 피드백
+ #업데이트 완료
+ -. 셀내용 불러오기 : dequeue
+ -. Movie 구조체 사용
+ -. configureCell 함수 사용
+ 
+ #업데이트 예정
+ -. 포스터 및 나머지셀 데이터 채울 예정
+ 
+ #피드백
+ -. 셀데이터가 많아지면 tableviewcontroller에서 데이터 관리가 힘들어지므로 tableviewcell에 configureCell 함수 선언하여 데이터 관리
+ -. configureCell 함수에 다양한 타입 데이터 한번에 반환하기 위해 Movie 구조체 생성하여 사용
+ -. 변수 타입을 구조체 배열로 선언하여 1개 셀에 들어갈 데이터를 준비하고 cellForRowAt에서 셀별로 데이터 반환하여 화면에 표시
+ 
+ 
+ 왜 함수를 선언하는지, 구조체를 만드는지, 변수에 구조체를 어떻게 사용할 건지 등 배경을 이해하는데 집중했다. 어떤 기능이 왜 써이는지 항상 확인하자. 그래야 그냥 코드만 따라하는 것보다 더 빨리 실력이 는다.
+ */
