@@ -39,6 +39,12 @@
 		98D739A328882C92006E59E0 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D739A228882C92006E59E0 /* MovieTableViewCell.swift */; };
 		98D739A528882D6E006E59E0 /* MovieTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D739A428882D6E006E59E0 /* MovieTableViewController.swift */; };
 		98D739A7288841E1006E59E0 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D739A6288841E1006E59E0 /* Movie.swift */; };
+		98F9273F2889926F009B5A69 /* BookStore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98F9273E2889926F009B5A69 /* BookStore.storyboard */; };
+		98F92741288992B5009B5A69 /* BookStoreCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F92740288992B5009B5A69 /* BookStoreCollectionViewController.swift */; };
+		98F9274428899456009B5A69 /* BookStoreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F9274328899456009B5A69 /* BookStoreCollectionViewCell.swift */; };
+		98F927462889A3F9009B5A69 /* BookInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F927452889A3F9009B5A69 /* BookInformationViewController.swift */; };
+		98F927482889ABD8009B5A69 /* BookDetailInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F927472889ABD8009B5A69 /* BookDetailInformationViewController.swift */; };
+		98F9274A2889AF1F009B5A69 /* WebBookInfoLinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F927492889AF1F009B5A69 /* WebBookInfoLinkViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +80,12 @@
 		98D739A228882C92006E59E0 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		98D739A428882D6E006E59E0 /* MovieTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewController.swift; sourceTree = "<group>"; };
 		98D739A6288841E1006E59E0 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		98F9273E2889926F009B5A69 /* BookStore.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BookStore.storyboard; sourceTree = "<group>"; };
+		98F92740288992B5009B5A69 /* BookStoreCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookStoreCollectionViewController.swift; sourceTree = "<group>"; };
+		98F9274328899456009B5A69 /* BookStoreCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookStoreCollectionViewCell.swift; sourceTree = "<group>"; };
+		98F927452889A3F9009B5A69 /* BookInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookInformationViewController.swift; sourceTree = "<group>"; };
+		98F927472889ABD8009B5A69 /* BookDetailInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailInformationViewController.swift; sourceTree = "<group>"; };
+		98F927492889AF1F009B5A69 /* WebBookInfoLinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebBookInfoLinkViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +104,7 @@
 		9885A29F2884DDEA009B5CCF = {
 			isa = PBXGroup;
 			children = (
+				98F92742288992C4009B5A69 /* BookStore */,
 				9885A2AA2884DDEA009B5CCF /* TrendMedia */,
 				9885A2A92884DDEA009B5CCF /* Products */,
 			);
@@ -157,6 +170,19 @@
 				98B2DEE52886442E0093F3C1 /* SearchViewController.swift */,
 			);
 			path = Search;
+			sourceTree = "<group>";
+		};
+		98F92742288992C4009B5A69 /* BookStore */ = {
+			isa = PBXGroup;
+			children = (
+				98F9273E2889926F009B5A69 /* BookStore.storyboard */,
+				98F92740288992B5009B5A69 /* BookStoreCollectionViewController.swift */,
+				98F9274328899456009B5A69 /* BookStoreCollectionViewCell.swift */,
+				98F927452889A3F9009B5A69 /* BookInformationViewController.swift */,
+				98F927472889ABD8009B5A69 /* BookDetailInformationViewController.swift */,
+				98F927492889AF1F009B5A69 /* WebBookInfoLinkViewController.swift */,
+			);
+			path = BookStore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +260,7 @@
 				98913B562886F7F000038365 /* Shopping.storyboard in Resources */,
 				98B2DEDE288640130093F3C1 /* Search.storyboard in Resources */,
 				9885A2C02884F113009B5CCF /* Home.storyboard in Resources */,
+				98F9273F2889926F009B5A69 /* BookStore.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,24 +274,29 @@
 				98B2DEEA2886478C0093F3C1 /* UITextField+Extension.swift in Sources */,
 				98913B5E28879AAA00038365 /* RecommendCollectionViewController.swift in Sources */,
 				9807B7722888E74F0076A8A9 /* TrendTableViewController.swift in Sources */,
+				98F9274428899456009B5A69 /* BookStoreCollectionViewCell.swift in Sources */,
 				98D739A328882C92006E59E0 /* MovieTableViewCell.swift in Sources */,
 				98913B5A288702E400038365 /* ShoppingTableViewCell.swift in Sources */,
 				98913B582886F87A00038365 /* ShoppingTableViewController.swift in Sources */,
 				98D739A128881304006E59E0 /* SecondShoppingTableViewCell.swift in Sources */,
 				98913B522886D04400038365 /* TrenViewController.swift in Sources */,
 				98B2DEEE28864D960093F3C1 /* BucketListTableViewCell.swift in Sources */,
+				98F9274A2889AF1F009B5A69 /* WebBookInfoLinkViewController.swift in Sources */,
 				98B2DEEC28864BA70093F3C1 /* BucketListTableViewController.swift in Sources */,
 				98B2DEE82886452C0093F3C1 /* UIViewController+Extension.swift in Sources */,
 				98D739A528882D6E006E59E0 /* MovieTableViewController.swift in Sources */,
 				98888D1328858E7800DA44C3 /* SettingViewController.swift in Sources */,
+				98F927462889A3F9009B5A69 /* BookInformationViewController.swift in Sources */,
 				98B2DEE62886442E0093F3C1 /* SearchViewController.swift in Sources */,
 				9885A2C22884FE41009B5CCF /* SettingTableViewController.swift in Sources */,
 				98D739A7288841E1006E59E0 /* Movie.swift in Sources */,
 				98913B6028879DFE00038365 /* RecommendCollectionViewCell.swift in Sources */,
+				98F92741288992B5009B5A69 /* BookStoreCollectionViewController.swift in Sources */,
 				9885A2B02884DDEA009B5CCF /* ViewController.swift in Sources */,
 				98D7399F28880F02006E59E0 /* SecondShoppingTableViewController.swift in Sources */,
 				9885A2AC2884DDEA009B5CCF /* AppDelegate.swift in Sources */,
 				9885A2AE2884DDEA009B5CCF /* SceneDelegate.swift in Sources */,
+				98F927482889ABD8009B5A69 /* BookDetailInformationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
