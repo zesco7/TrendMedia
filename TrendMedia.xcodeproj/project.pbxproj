@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9807B7722888E74F0076A8A9 /* TrendTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9807B7712888E74F0076A8A9 /* TrendTableViewController.swift */; };
 		9885A2AC2884DDEA009B5CCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9885A2AB2884DDEA009B5CCF /* AppDelegate.swift */; };
 		9885A2AE2884DDEA009B5CCF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9885A2AD2884DDEA009B5CCF /* SceneDelegate.swift */; };
 		9885A2B02884DDEA009B5CCF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9885A2AF2884DDEA009B5CCF /* ViewController.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9807B7712888E74F0076A8A9 /* TrendTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendTableViewController.swift; sourceTree = "<group>"; };
 		9885A2A82884DDEA009B5CCF /* TrendMedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrendMedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9885A2AB2884DDEA009B5CCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9885A2AD2884DDEA009B5CCF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				98D739A228882C92006E59E0 /* MovieTableViewCell.swift */,
 				98B2DEE1288640770093F3C1 /* Intro.storyboard */,
 				98913B532886D0A300038365 /* Trend.storyboard */,
+				9807B7712888E74F0076A8A9 /* TrendTableViewController.swift */,
 				98913B5F28879DFE00038365 /* RecommendCollectionViewCell.swift */,
 				98913B5D28879AAA00038365 /* RecommendCollectionViewController.swift */,
 				98913B552886F7F000038365 /* Shopping.storyboard */,
@@ -227,6 +230,7 @@
 			files = (
 				98B2DEEA2886478C0093F3C1 /* UITextField+Extension.swift in Sources */,
 				98913B5E28879AAA00038365 /* RecommendCollectionViewController.swift in Sources */,
+				9807B7722888E74F0076A8A9 /* TrendTableViewController.swift in Sources */,
 				98D739A328882C92006E59E0 /* MovieTableViewCell.swift in Sources */,
 				98913B5A288702E400038365 /* ShoppingTableViewCell.swift in Sources */,
 				98913B582886F87A00038365 /* ShoppingTableViewController.swift in Sources */,

@@ -45,7 +45,7 @@
         <!--Bucket List Table View Controller-->
         <scene sceneID="6v9-3N-dJ0">
             <objects>
-                <tableViewController id="kLd-xt-vGw" customClass="BucketListTableViewController" customModule="TrendMedia" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="BucketListTableViewController" id="kLd-xt-vGw" customClass="BucketListTableViewController" customModule="TrendMedia" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="qVg-Sd-d33">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -188,6 +188,95 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3hJ-Nu-Bgw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1571.0144927536232" y="81.696428571428569"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="nPd-68-Jbi">
+            <objects>
+                <viewController id="jfS-6V-AFm" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ROH-QW-ruo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="OEt-wo-A15"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pxf-Wb-Xg1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2577" y="82"/>
+        </scene>
+        <!--Trend Table View Controller-->
+        <scene sceneID="Hbk-jY-ke1">
+            <objects>
+                <tableViewController id="kQM-Cx-OL7" customClass="TrendTableViewController" customModule="TrendMedia" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="aN1-mS-EFF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="y4k-4P-Ctp">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="227"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fAx-Ga-4Fj">
+                                    <rect key="frame" x="60" y="98" width="49" height="31"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="영화">
+                                        <backgroundConfiguration key="background">
+                                            <color key="backgroundColor" red="0.15896060479999999" green="0.95340591669999997" blue="0.34088343850000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </backgroundConfiguration>
+                                    </buttonConfiguration>
+                                    <connections>
+                                        <action selector="movieButtonClicked:" destination="kQM-Cx-OL7" eventType="touchUpInside" id="sMX-9u-i5r"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KbV-7L-JA9">
+                                    <rect key="frame" x="166" y="98" width="61" height="31"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="드라마">
+                                        <backgroundConfiguration key="background">
+                                            <color key="backgroundColor" red="0.15896060479999999" green="0.95340591669999997" blue="0.34088343850000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </backgroundConfiguration>
+                                    </buttonConfiguration>
+                                    <connections>
+                                        <action selector="daramaButtonClicked:" destination="kQM-Cx-OL7" eventType="touchUpInside" id="HlJ-sH-cSK"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sb2-rB-Ts0">
+                                    <rect key="frame" x="287" y="93" width="49" height="31"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="도서">
+                                        <backgroundConfiguration key="background">
+                                            <color key="backgroundColor" red="0.15896060479999999" green="0.95340591669999997" blue="0.34088343850000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </backgroundConfiguration>
+                                    </buttonConfiguration>
+                                    <connections>
+                                        <action selector="bookButtonClicked:" destination="kQM-Cx-OL7" eventType="touchUpInside" id="AYH-Le-dOg"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="p2B-Ta-vxR">
+                                <rect key="frame" x="0.0" y="271.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="p2B-Ta-vxR" id="Pau-Ds-SP8">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="kQM-Cx-OL7" id="TQh-t1-IGL"/>
+                            <outlet property="delegate" destination="kQM-Cx-OL7" id="O9I-Y5-bdr"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uoa-6k-uLs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3304.347826086957" y="73.660714285714278"/>
         </scene>
     </scenes>
     <resources>

@@ -41,6 +41,12 @@ class RecommendCollectionViewController: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
+//        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RecommendCollectionViewCell", for: indexPath) as! RecommendCollectionViewCell else {
+//            return UICollectionViewCell()//반환타입 맞춰야함 10:20
+//        }
+                
+        
+        
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RecommendCollectionViewCell", for: indexPath) as! RecommendCollectionViewCell
         
         cell.posterImage.backgroundColor = .orange
@@ -54,6 +60,7 @@ class RecommendCollectionViewController: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         view.self.makeToast("\(indexPath.item)번째 셀을 선택했습니다.", duration: 1, position: .center)
+        self.navigationController?.popViewController(animated: true)
         
     }
 }

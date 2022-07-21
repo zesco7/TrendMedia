@@ -42,6 +42,19 @@ class MovieTableViewController: UITableViewController {
         return UIScreen.main.bounds.height / 8 //UIScreen.main.bounds.height는 디바이스 높이 .width면 폭
     
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        
+        let storyboard = UIStoryboard(name: "Trend", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "RecommendCollectionViewController") as! RecommendCollectionViewController
+        
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    
+    
+    
 }
 
 /*
