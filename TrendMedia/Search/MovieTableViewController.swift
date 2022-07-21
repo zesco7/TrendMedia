@@ -7,8 +7,12 @@
 
 import UIKit
 
+
+
 class MovieTableViewController: UITableViewController {
 
+   
+    
     //구조체 배열타입 변수 선언 : 변수 하나에 타입이 다른 여러 데이터를 넣기 위함.
     //Movie가 클래스였으면 일일이 초기화 해줘야했으나 구조체라서 초기화안해줘도 됨.
     var movieTitle = [Movie(movieTitle: "해리포터1", movieRelease: "2022-2-22", movieOverview: "...중략", movieRuntime: 150, movieRate: 10.0)]
@@ -45,11 +49,10 @@ class MovieTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        
         let storyboard = UIStoryboard(name: "Trend", bundle: nil)
-        let viewController = storyboard.instantiateViewController(withIdentifier: "RecommendCollectionViewController") as! RecommendCollectionViewController
+        let vc = storyboard.instantiateViewController(withIdentifier: RecommendCollectionViewController.identifier) as! RecommendCollectionViewController
         
-        self.navigationController?.pushViewController(viewController, animated: true)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     

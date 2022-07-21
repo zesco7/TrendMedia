@@ -17,9 +17,9 @@ class BucketListTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         navigationItem.title = "버킷리스트"
-//        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "xmark", style: .plain, target: <#T##Any?#>, action: #selector(closeButtonClicked))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "xmark"), style: .plain, target: self, action: #selector(closeButtonClicked))
         
         tableView.rowHeight = 100
         list.append("마녀2")
@@ -28,7 +28,8 @@ class BucketListTableViewController: UITableViewController {
 
             }
     
-    @objc func closeButtonClicked() {
+    @objc
+    func closeButtonClicked() {
         self.dismiss(animated: true)
         
     }
@@ -66,18 +67,19 @@ class BucketListTableViewController: UITableViewController {
     
     @IBAction func userTextFieldReturn(_ sender: UITextField) {
         
+        //느낌표나 물음표 계속 찍어줘야할때 하지 않기 위한 방법
         //1. if-let
         if let value = sender.text?.trimmingCharacters(in: .whitespacesAndNewlines), !value.isEmpty, (2...6).contains(value.count) {
             list.append(value)
             tableView.reloadData()
         } else {
-            //토스트 메시지 띄우기
+            //토스트 메시지 띄우기 : 빈칸 입력 또는 글자수 초과
         }
         
         //2.guard
         
         guard let value = sender.text?.trimmingCharacters(in: .whitespacesAndNewlines), !value.isEmpty, (2...6).contains(value.count) else {
-            //토스트 메시지 띄우기
+            //토스트 메시지 띄우기 : 빈칸 입력 또는 글자수 초과
             return
         }
         list.append(sender.text!)

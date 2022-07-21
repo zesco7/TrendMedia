@@ -108,32 +108,22 @@
 		9885A2AA2884DDEA009B5CCF /* TrendMedia */ = {
 			isa = PBXGroup;
 			children = (
-				98D739A6288841E1006E59E0 /* Movie.swift */,
+				98F9273D28897CF4009B5A69 /* Search */,
+				98F9273C28893A4A009B5A69 /* Trend */,
 				98888D0E2885846F00DA44C3 /* Setting.storyboard */,
 				9885A2B12884DDEA009B5CCF /* Main.storyboard */,
 				9885A2BF2884F113009B5CCF /* Home.storyboard */,
-				98B2DEDD288640130093F3C1 /* Search.storyboard */,
-				98D739A428882D6E006E59E0 /* MovieTableViewController.swift */,
-				98D739A228882C92006E59E0 /* MovieTableViewCell.swift */,
 				98B2DEE1288640770093F3C1 /* Intro.storyboard */,
-				98913B532886D0A300038365 /* Trend.storyboard */,
-				9807B7712888E74F0076A8A9 /* TrendTableViewController.swift */,
-				98913B5F28879DFE00038365 /* RecommendCollectionViewCell.swift */,
-				98913B5D28879AAA00038365 /* RecommendCollectionViewController.swift */,
 				98913B552886F7F000038365 /* Shopping.storyboard */,
 				98D739A028881304006E59E0 /* SecondShoppingTableViewCell.swift */,
 				98D7399E28880F02006E59E0 /* SecondShoppingTableViewController.swift */,
 				98913B59288702E400038365 /* ShoppingTableViewCell.swift */,
 				98913B572886F87A00038365 /* ShoppingTableViewController.swift */,
-				98913B512886D04400038365 /* TrenViewController.swift */,
-				98B2DEE52886442E0093F3C1 /* SearchViewController.swift */,
 				9885A2AB2884DDEA009B5CCF /* AppDelegate.swift */,
 				9885A2AD2884DDEA009B5CCF /* SceneDelegate.swift */,
 				9885A2AF2884DDEA009B5CCF /* ViewController.swift */,
 				98B2DEE72886452C0093F3C1 /* UIViewController+Extension.swift */,
 				98B2DEE92886478C0093F3C1 /* UITextField+Extension.swift */,
-				98B2DEEB28864BA70093F3C1 /* BucketListTableViewController.swift */,
-				98B2DEED28864D960093F3C1 /* BucketListTableViewCell.swift */,
 				98888D1228858E7800DA44C3 /* SettingViewController.swift */,
 				9885A2C12884FE41009B5CCF /* SettingTableViewController.swift */,
 				9885A2B42884DDEC009B5CCF /* Assets.xcassets */,
@@ -141,6 +131,32 @@
 				9885A2B92884DDEC009B5CCF /* Info.plist */,
 			);
 			path = TrendMedia;
+			sourceTree = "<group>";
+		};
+		98F9273C28893A4A009B5A69 /* Trend */ = {
+			isa = PBXGroup;
+			children = (
+				98B2DEED28864D960093F3C1 /* BucketListTableViewCell.swift */,
+				98B2DEEB28864BA70093F3C1 /* BucketListTableViewController.swift */,
+				98913B5D28879AAA00038365 /* RecommendCollectionViewController.swift */,
+				98913B5F28879DFE00038365 /* RecommendCollectionViewCell.swift */,
+				9807B7712888E74F0076A8A9 /* TrendTableViewController.swift */,
+				98913B512886D04400038365 /* TrenViewController.swift */,
+				98913B532886D0A300038365 /* Trend.storyboard */,
+			);
+			path = Trend;
+			sourceTree = "<group>";
+		};
+		98F9273D28897CF4009B5A69 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				98B2DEDD288640130093F3C1 /* Search.storyboard */,
+				98D739A428882D6E006E59E0 /* MovieTableViewController.swift */,
+				98D739A228882C92006E59E0 /* MovieTableViewCell.swift */,
+				98D739A6288841E1006E59E0 /* Movie.swift */,
+				98B2DEE52886442E0093F3C1 /* SearchViewController.swift */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -18,6 +18,8 @@ import Kingfisher
 
 class RecommendCollectionViewController: UICollectionViewController {
 
+    static let identifier = "RecommendCollectionViewController"
+    
     var imageURL = "https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fmovie-phinf.pstatic.net%2F20220708_123%2F1657272256389R34Q0_JPEG%2Fmovie_image.jpg"
     
     override func viewDidLoad() {
@@ -40,14 +42,9 @@ class RecommendCollectionViewController: UICollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-//        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RecommendCollectionViewCell", for: indexPath) as! RecommendCollectionViewCell else {
-//            return UICollectionViewCell()//반환타입 맞춰야함 10:20
-//        }
-                
-        
-        
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RecommendCollectionViewCell", for: indexPath) as! RecommendCollectionViewCell
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RecommendCollectionViewCell", for: indexPath) as? RecommendCollectionViewCell else {
+            return UICollectionViewCell()//반환타입 맞춰야함 10:20
+        }
         
         cell.posterImage.backgroundColor = .orange
         
@@ -59,7 +56,7 @@ class RecommendCollectionViewController: UICollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        view.self.makeToast("\(indexPath.item)번째 셀을 선택했습니다.", duration: 1, position: .center)
+        view.self.makeToast("\(indexPath.item)번째 셀을 선택했습니다.", duration: 2, position: .center)
         self.navigationController?.popViewController(animated: true)
         
     }

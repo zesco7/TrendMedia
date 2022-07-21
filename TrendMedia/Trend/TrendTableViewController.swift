@@ -32,8 +32,8 @@ class TrendTableViewController: UITableViewController {
     }
     @IBAction func movieButtonClicked(_ sender: UIButton) {
         
-        //화면전환: 1. 스토리보드 파일 찾기 2. 스토리보드 내 뷰컨트롤러 찾기 3. 화면 전환
-        //영화버튼클릭> bucketlisttableviewcon present
+        //화면전환: 1. 이동할 스토리보드 파일 찾기 2. 스토리보드 내 이동할 뷰컨트롤러 찾기 3. 화면 전환
+        //영화버튼클릭> bucketlisttableviewcontroller(띄우기 아래에서 위로 띄우는 present형식으로)
         
         //1.
         let storyboard = UIStoryboard(name: "Trend", bundle: nil)
@@ -51,7 +51,7 @@ class TrendTableViewController: UITableViewController {
         
         //2.
         let vc = storyboard.instantiateViewController(withIdentifier: BucketListTableViewController.identifier) as! BucketListTableViewController
-        //2.5 present 시 화면전환방식 설정(옵션)
+        //2.5 present시 화면전환방식 설정 : safe area까지 풀스크린으로 띄우기(옵션) *풀스크린 디스플레이는 이전화면으로 못돌아감...
         vc.modalPresentationStyle = .fullScreen
         
         //3.
@@ -67,6 +67,8 @@ class TrendTableViewController: UITableViewController {
         
         //2.5 present 시 화면전환방식 설정(옵션)
         let nav = UINavigationController(rootViewController: vc)
+        
+        vc.modalPresentationStyle = .fullScreen
         
         //3.
         self.present(nav, animated: true)
