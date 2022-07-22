@@ -9,6 +9,10 @@ import UIKit
 
 class BucketListTableViewController: UITableViewController {
 
+    //1. 값전달받을 프로퍼티 생성
+    var placeholder: String?
+    
+    @IBOutlet weak var textField: UITextField!
     static let identifier = "BucketListTableViewController"
     
     @IBOutlet weak var userTextField: UITextField!
@@ -18,6 +22,8 @@ class BucketListTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        textField.text = ""
+        textField.placeholder = "영화영화"
         navigationItem.title = "버킷리스트"
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "xmark"), style: .plain, target: self, action: #selector(closeButtonClicked))
         
@@ -63,6 +69,13 @@ class BucketListTableViewController: UITableViewController {
             tableView.reloadData()
         }
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+   //     vc.placeholder.textfield
+    }
+    
+    
     
     
     @IBAction func userTextFieldReturn(_ sender: UITextField) {

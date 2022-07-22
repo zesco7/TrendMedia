@@ -9,6 +9,8 @@ import UIKit
 
 class TrendTableViewController: UITableViewController {
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -40,6 +42,9 @@ class TrendTableViewController: UITableViewController {
         
         //2.
         let vc = storyboard.instantiateViewController(withIdentifier: BucketListTableViewController.identifier) as! BucketListTableViewController
+        
+        //값전달
+        vc.placeholder = sender.currentTitle
         
         //3.
         self.present(vc, animated: true)

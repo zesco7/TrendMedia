@@ -12,15 +12,29 @@ import UIKit
 class MovieTableViewController: UITableViewController {
 
    
-    
+    //var movie = Movie()
     //구조체 배열타입 변수 선언 : 변수 하나에 타입이 다른 여러 데이터를 넣기 위함.
     //Movie가 클래스였으면 일일이 초기화 해줘야했으나 구조체라서 초기화안해줘도 됨.
     var movieTitle = [Movie(movieTitle: "해리포터1", movieRelease: "2022-2-22", movieOverview: "...중략", movieRuntime: 150, movieRate: 10.0)]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "처음으로", style: .plain, target: self, action: #selector(resetButtonClicked))
 
 
+    }
+    
+    @objc func resetButtonClicked() {
+        //iOS 13+ SceneDelegate 쓸 때 동작하는 코드
+        let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene
+        let sceneDelegate = windowScene?.delegate as? SceneDelegate
+        
+        let storyboard = UIStoryboard(name: "Trend", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+        
+        sceneDelegate?.window?.rootViewController = viewController
+        sceneDelegate?.window?.makeKeyAndVisible()
     }
 
     // MARK: - 1. 셀 갯수 추가
@@ -52,8 +66,17 @@ class MovieTableViewController: UITableViewController {
         let storyboard = UIStoryboard(name: "Trend", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: RecommendCollectionViewController.identifier) as! RecommendCollectionViewController
         
+        //2. 값 전달 : vc가 가지고 있는 프로퍼티에 데이터 추가
+        //vc.movieTitle = movie.movieTitle
+        vc.movieTitle = "값 전달 확인"
+        //vc.movieData = movieTitle[Movie()]
+        // movieInfo파일이면 타입 배열임 : movieInfo[]
+        
         self.navigationController?.pushViewController(vc, animated: true)
     }
+    
+    
+    
     
     
     

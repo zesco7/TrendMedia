@@ -16,8 +16,62 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
-    }
+        
+        //guard let _ = (scene as? UIWindowScene) else { return }
+        
+        UserDefaults.standard.set(false, forKey: "First")
+        //true면 viewController, false면 MovieTableViewController 실행
+        
+//        if UserDefaults.standard.bool(forKey: "First") {
+//
+//        guard let scene = (scene as? UIWindowScene) else { return }
+//        window = UIWindow(windowScene: scene)
+//
+//        let storyboard = UIStoryboard(name: "Trend", bundle: nil)
+//        let viewController = storyboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+//
+//        window?.rootViewController = viewController
+//
+//        window?.makeKeyAndVisible()
+//
+//        } else {
+//            guard let scene = (scene as? UIWindowScene) else { return }
+//            window = UIWindow(windowScene: scene)
+//
+//            let storyboard = UIStoryboard(name: "Search", bundle: nil)
+//            let viewController = storyboard.instantiateViewController(withIdentifier: "MovieTableViewController") as! MovieTableViewController
+//
+//            window?.rootViewController = viewController
+//
+//            window?.makeKeyAndVisible()
+//        }
+        
+        
+        //UserDefaults.standard.set(false, forKey: "First") >> 다른화면에 배치해야 함. 안그러면 시작할때마다 새로 저장함.
+        //true면 viewController, false면 MovieTableViewController 실행
+
+        guard let scene = (scene as? UIWindowScene) else { return }
+        window = UIWindow(windowScene: scene)
+
+        if UserDefaults.standard.bool(forKey: "First") {
+        
+        let storyboard = UIStoryboard(name: "Trend", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+        
+        window?.rootViewController = viewController
+        
+        } else {
+    
+            let storyboard = UIStoryboard(name: "Search", bundle: nil)
+            let viewController = storyboard.instantiateViewController(withIdentifier: "MovieTableViewController") as! MovieTableViewController
+            
+            window?.rootViewController = viewController
+            //window?.rootViewController = UINavigationController(rootViewController: viewController) 네비컨트롤러 설정
+        }
+            window?.makeKeyAndVisible()
+        }
+
+        
 
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
