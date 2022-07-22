@@ -18,6 +18,8 @@ import Kingfisher
 
 class RecommendCollectionViewController: UICollectionViewController {
 
+    
+    
     //1. 값 전달 : 데이터 받을 공간(프로퍼티) 생성
     var movieTitle: String? // 영화제목만 넘기기
     var movieData: Movie? // 따로 따로 프로퍼티 생성안하고 하나의 구조체 전체를 전달받는이유? 1. 귀찮아서(변수가 많아지면 일일이 하는데 시간걸림) 2.
@@ -67,4 +69,5 @@ class RecommendCollectionViewController: UICollectionViewController {
         self.navigationController?.popViewController(animated: true)
         
     }
+    
 }

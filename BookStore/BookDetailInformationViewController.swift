@@ -22,8 +22,12 @@ class BookDetailInformationViewController: UIViewController {
         let storyboard = UIStoryboard(name: "BookStore", bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier: WebBookInfoLinkViewController.identifier) as! WebBookInfoLinkViewController
         
-        self.navigationController?.pushViewController(viewController, animated: true)
-            
+        self.present(viewController, animated: true)
+        viewController.modalPresentationStyle = .fullScreen
+        //self.navigationController?.pushViewController(viewController, animated: true)
+        let nav = UINavigationController(rootViewController: viewController)
+        
+        
     }
     
 

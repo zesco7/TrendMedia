@@ -63,10 +63,10 @@ class BookStoreCollectionViewController: UICollectionViewController {
         let viewController = storyboard.instantiateViewController(withIdentifier: BookInformationViewController.identifier) as! BookInformationViewController
         
         //2.5 present 시 화면전환방식 설정(옵션)
-        viewController.modalPresentationStyle = .fullScreen
-        let navigation = UINavigationController(rootViewController: viewController)
+        //viewController.modalPresentationStyle = .fullScreen
+        //let navigation = UINavigationController(rootViewController: viewController)
         
-        self.present(viewController, animated: true)
+        //self.present(viewController, animated: true)
         
     }
     

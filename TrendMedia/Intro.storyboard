@@ -49,7 +49,6 @@
                     </tabBar>
                     <connections>
                         <segue destination="zlX-Em-waM" kind="relationship" relationship="viewControllers" id="WzO-1r-rjQ"/>
-                        <segue destination="FeZ-fH-m1b" kind="relationship" relationship="viewControllers" id="CcV-BT-uuS"/>
                         <segue destination="wpV-ju-kGX" kind="relationship" relationship="viewControllers" id="Yq8-fj-htg"/>
                     </connections>
                 </tabBarController>
@@ -75,25 +74,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WG2-zA-xlW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1854" y="236"/>
-        </scene>
-        <!--Item-->
-        <scene sceneID="Up4-c0-h3a">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FeZ-fH-m1b" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="nbb-On-Lg0"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SBa-fu-FiK">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="lP2-2z-3Uy" kind="relationship" relationship="rootViewController" id="dtb-QU-EwA"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SlG-HS-wWA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1075" y="236"/>
         </scene>
     </scenes>
 </document>
