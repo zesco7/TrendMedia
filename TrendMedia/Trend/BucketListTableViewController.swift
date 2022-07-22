@@ -72,6 +72,10 @@ class BucketListTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        let storyboard = UIStoryboard(name: "Trend", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: RecommendCollectionViewController.identifier) as! RecommendCollectionViewController
+        
+        self.navigationController?.pushViewController(viewController, animated: true)
    //     vc.placeholder.textfield
     }
     

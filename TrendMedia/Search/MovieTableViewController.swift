@@ -66,13 +66,14 @@ class MovieTableViewController: UITableViewController {
         let storyboard = UIStoryboard(name: "Trend", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: RecommendCollectionViewController.identifier) as! RecommendCollectionViewController
         
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+        
         //2. 값 전달 : vc가 가지고 있는 프로퍼티에 데이터 추가
         //vc.movieTitle = movie.movieTitle
         vc.movieTitle = "값 전달 확인"
         //vc.movieData = movieTitle[Movie()]
         // movieInfo파일이면 타입 배열임 : movieInfo[]
-        
-        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     
