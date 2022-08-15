@@ -10,6 +10,7 @@
 		9807B7722888E74F0076A8A9 /* TrendTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9807B7712888E74F0076A8A9 /* TrendTableViewController.swift */; };
 		9869938F28AA07E90075895A /* SearchTheater.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9869938E28AA07E90075895A /* SearchTheater.storyboard */; };
 		9869939128AA07FE0075895A /* SearchTheaterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9869939028AA07FE0075895A /* SearchTheaterViewController.swift */; };
+		9869939528AA2FFB0075895A /* TheaterInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9869939428AA2FFB0075895A /* TheaterInformation.swift */; };
 		9885A2AC2884DDEA009B5CCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9885A2AB2884DDEA009B5CCF /* AppDelegate.swift */; };
 		9885A2AE2884DDEA009B5CCF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9885A2AD2884DDEA009B5CCF /* SceneDelegate.swift */; };
 		9885A2B02884DDEA009B5CCF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9885A2AF2884DDEA009B5CCF /* ViewController.swift */; };
@@ -53,6 +54,7 @@
 		9807B7712888E74F0076A8A9 /* TrendTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendTableViewController.swift; sourceTree = "<group>"; };
 		9869938E28AA07E90075895A /* SearchTheater.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchTheater.storyboard; sourceTree = "<group>"; };
 		9869939028AA07FE0075895A /* SearchTheaterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTheaterViewController.swift; sourceTree = "<group>"; };
+		9869939428AA2FFB0075895A /* TheaterInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheaterInformation.swift; sourceTree = "<group>"; };
 		9885A2A82884DDEA009B5CCF /* TrendMedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrendMedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9885A2AB2884DDEA009B5CCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9885A2AD2884DDEA009B5CCF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 			children = (
 				9869938E28AA07E90075895A /* SearchTheater.storyboard */,
 				9869939028AA07FE0075895A /* SearchTheaterViewController.swift */,
+				9869939428AA2FFB0075895A /* TheaterInformation.swift */,
 			);
 			path = SearchTheater;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				98D7399F28880F02006E59E0 /* SecondShoppingTableViewController.swift in Sources */,
 				9885A2AC2884DDEA009B5CCF /* AppDelegate.swift in Sources */,
 				9885A2AE2884DDEA009B5CCF /* SceneDelegate.swift in Sources */,
+				9869939528AA2FFB0075895A /* TheaterInformation.swift in Sources */,
 				98F927482889ABD8009B5A69 /* BookDetailInformationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
