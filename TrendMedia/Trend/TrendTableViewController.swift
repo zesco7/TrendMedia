@@ -4,7 +4,7 @@
 //
 //  Created by Mac Pro 15 on 2022/07/21.
 //
-
+/*
 import UIKit
 
 class TrendTableViewController: UITableViewController {
@@ -79,7 +79,5 @@ class TrendTableViewController: UITableViewController {
         self.present(nav, animated: true)
     }
     
-    
-    
-    
 }
+ */

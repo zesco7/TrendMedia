@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9807B7722888E74F0076A8A9 /* TrendTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9807B7712888E74F0076A8A9 /* TrendTableViewController.swift */; };
+		9869938F28AA07E90075895A /* SearchTheater.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9869938E28AA07E90075895A /* SearchTheater.storyboard */; };
+		9869939128AA07FE0075895A /* SearchTheaterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9869939028AA07FE0075895A /* SearchTheaterViewController.swift */; };
 		9885A2AC2884DDEA009B5CCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9885A2AB2884DDEA009B5CCF /* AppDelegate.swift */; };
 		9885A2AE2884DDEA009B5CCF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9885A2AD2884DDEA009B5CCF /* SceneDelegate.swift */; };
 		9885A2B02884DDEA009B5CCF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9885A2AF2884DDEA009B5CCF /* ViewController.swift */; };
@@ -49,6 +51,8 @@
 
 /* Begin PBXFileReference section */
 		9807B7712888E74F0076A8A9 /* TrendTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendTableViewController.swift; sourceTree = "<group>"; };
+		9869938E28AA07E90075895A /* SearchTheater.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchTheater.storyboard; sourceTree = "<group>"; };
+		9869939028AA07FE0075895A /* SearchTheaterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTheaterViewController.swift; sourceTree = "<group>"; };
 		9885A2A82884DDEA009B5CCF /* TrendMedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrendMedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9885A2AB2884DDEA009B5CCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9885A2AD2884DDEA009B5CCF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +105,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9869938D28AA079E0075895A /* SearchTheater */ = {
+			isa = PBXGroup;
+			children = (
+				9869938E28AA07E90075895A /* SearchTheater.storyboard */,
+				9869939028AA07FE0075895A /* SearchTheaterViewController.swift */,
+			);
+			path = SearchTheater;
+			sourceTree = "<group>";
+		};
 		9885A29F2884DDEA009B5CCF = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +134,7 @@
 		9885A2AA2884DDEA009B5CCF /* TrendMedia */ = {
 			isa = PBXGroup;
 			children = (
+				9869938D28AA079E0075895A /* SearchTheater */,
 				98F9273D28897CF4009B5A69 /* Search */,
 				98F9273C28893A4A009B5A69 /* Trend */,
 				98888D0E2885846F00DA44C3 /* Setting.storyboard */,
@@ -259,6 +273,7 @@
 				9885A2B32884DDEA009B5CCF /* Main.storyboard in Resources */,
 				98913B562886F7F000038365 /* Shopping.storyboard in Resources */,
 				98B2DEDE288640130093F3C1 /* Search.storyboard in Resources */,
+				9869938F28AA07E90075895A /* SearchTheater.storyboard in Resources */,
 				9885A2C02884F113009B5CCF /* Home.storyboard in Resources */,
 				98F9273F2889926F009B5A69 /* BookStore.storyboard in Resources */,
 			);
@@ -271,6 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9869939128AA07FE0075895A /* SearchTheaterViewController.swift in Sources */,
 				98B2DEEA2886478C0093F3C1 /* UITextField+Extension.swift in Sources */,
 				98913B5E28879AAA00038365 /* RecommendCollectionViewController.swift in Sources */,
 				9807B7722888E74F0076A8A9 /* TrendTableViewController.swift in Sources */,
@@ -443,6 +459,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VSHQ8JA888;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TrendMedia/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -470,6 +487,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VSHQ8JA888;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TrendMedia/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

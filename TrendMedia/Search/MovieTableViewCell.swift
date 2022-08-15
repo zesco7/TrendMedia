@@ -22,7 +22,7 @@ class MovieTableViewCell: UITableViewCell {
         
         titleOfMovie.text = data.movieTitle
         titleOfMovie.font = .boldSystemFont(ofSize: 15)
-        openingDay.text = "\(data.movieRelease) \(data.movieRuntime) \(data.movieRate)"
+        openingDay.text = "\(data.movieRelease) |  \(data.movieRuntime) | \(data.movieRate)"
         introduction.text = "ㅃㅃㅃㅃㅃㅃㅂㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ"
         introduction.numberOfLines = 0
 

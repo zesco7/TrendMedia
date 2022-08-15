@@ -32,6 +32,8 @@ class SecondShoppingTableViewController: UITableViewController {
         secondButtonToAdd.layer.cornerRadius = 10
         secondButtonToAdd.setTitle("추가", for: .normal)
         secondButtonToAdd.tintColor = .black
+        secondButtonToAdd.currentTitle
+        
         
     }
 
