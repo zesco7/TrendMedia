@@ -8,7 +8,7 @@
 import UIKit
 
 class SecondShoppingTableViewController: UITableViewController {
-
+    
     
     
     var secondShoppingListStored = ["그립톡 구매하기", "사이다 구매", "아이패드 케이스 최저가 알아보기", "양말"]
@@ -36,22 +36,22 @@ class SecondShoppingTableViewController: UITableViewController {
         
         
     }
-
+    
     
     
     //MARK: - 셀 갯수 설정
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return secondShoppingListStored.count
     }
-
+    
     //MARK: - 셀 내용 설정
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "SecondShoppingTableViewCell", for: indexPath) as! SecondShoppingTableViewCell
-
+        
         cell.secondShoppingList.text = secondShoppingListStored[indexPath.row]
         cell.secondShoppingList.font = .boldSystemFont(ofSize: 15)
-
+        
         return cell
     }
     //MARK: - 액션
@@ -60,16 +60,21 @@ class SecondShoppingTableViewController: UITableViewController {
         secondShoppingListStored.append(sender.text!)
         tableView.reloadData()
     }
-
+    
     //2. 스와이프 삭제 액션 추가
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             secondShoppingListStored.remove(at: indexPath.row)
             tableView.reloadData()
+        }
     }
-
+    //3. 버튼 액션 추가
+    @IBAction func addShoppingList(_ sender: UIButton) {
+        secondShoppingListStored.append(secondTextField.text!)
+        tableView.reloadData()
     }
-
+    
+    
 }
 
 
@@ -83,7 +88,7 @@ class SecondShoppingTableViewController: UITableViewController {
  -. 하단 셀 배경 회색으로 변경 및 테두리 둥글게 적용 : tableviewcell파일에서 속성변경(tableviewcontroller 아님)
  
  #업데이트 예정
--. 추가 버튼 클릭시 텍스트필드값 하단셀에 추가
+ -. 추가 버튼 클릭시 텍스트필드값 하단셀에 추가
  
  #피드백
  1. 테이블 클래스 연결
